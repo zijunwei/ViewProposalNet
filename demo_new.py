@@ -17,7 +17,7 @@ import glob
 
 def main(argv=None):
     gpu_id = 0
-    test_image_directory = '/home/zwei/Dev/CVPR18_release/tmp'
+    test_image_directory = './example_images'
     image_format = 'jpg'
     image_list = glob.glob(os.path.join(test_image_directory, '*.{:s}'.format(image_format)))
     image_list.sort()
